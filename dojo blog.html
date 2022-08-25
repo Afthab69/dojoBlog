@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Blog</title>
+    <link rel="stylesheet" href="dojo_home.css">
+    <script src="dojo.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h2>The Dojo Blog</h2><br>
+        <nav>
+            <br>
+            <input type="button" class="button1" value="Home" onclick="disp()">
+            <input type="button" class="button" value="Add Blog" onclick="disp1()">
+        </nav>
+    </div>
+    <div id = "bodyclass">
+        <form id="form">
+            <label for="blogtitle">Blog Title:</label><br>
+            <input type="text" id="blogtitle" name="Title"><br>
+            <label for="blogbody">Blog Body:</label><br>
+            <textarea name="message" rows="2" cols="20" id = "blogcontent"></textarea><br>
+            <label for="blogauthor">Blog Author:</label><br>
+            <input type="text" id="blogauthor" name="Author" autocomplete="on"><br><br>
+            <input type="submit" class="button" value="Add Blog" onclick="addinfo()">
+        </form>
+    </div>
+    <div id="bodyclass2">
+        <h2>All Blogs!</h2>
+        <div id = "bodyc">
+        <ul id="blog-list">
+            <div class = "heading">
+                <p class = "notheading">
+                </p>
+            </div>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>
